@@ -4,8 +4,6 @@ import cv2
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
 
-
-
 # 🔧 rebuild model (exact copy)
 def build_model():
     model = Sequential()
@@ -29,7 +27,7 @@ def build_model():
 
 # load weights
 model = build_model()
-model.load_weights("model.weights.h5", by_name=True, skip_mismatch=True)
+model.load_weights("model.weights.h5")
 
 print("✅ Model rebuilt and weights loaded")
 
