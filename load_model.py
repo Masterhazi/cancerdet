@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import numpy as np
 import cv2
 from tensorflow.keras.models import Sequential
@@ -34,7 +34,7 @@ print("✅ Model rebuilt and weights loaded")
 # test
 dummy = np.random.rand(1,128,128,3)
 pred = model.predict(dummy)
-=======
+
 import numpy as np
 import cv2
 from tensorflow.keras.models import Sequential
@@ -70,5 +70,5 @@ print("✅ Model rebuilt and weights loaded")
 # test
 dummy = np.random.rand(1,128,128,3)
 pred = model.predict(dummy)
->>>>>>> aa1385721af5a7b9fe02f869de436bd0855f636f
+
 print("Prediction shape:", pred.shape)
